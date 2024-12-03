@@ -1,0 +1,21 @@
+<div class="alpha">
+    <div class="topic-count">
+        <ul>
+            <li>
+                <a href="{% url "home" %}">All <span>{{topics.count}} Available....</span> </a>
+            </li>
+            
+            {% for topic in topics %}
+            
+            <li>
+                <a href="{% url "home" %}?q={{topic.name}}">{{topic}}<span>{{topic.room_set.all.count}}</span></a>
+            </li>
+            {% endfor %}
+            <li>
+                <a href="{% url "topics" %}">More...</a>
+            </li>
+
+        </ul>
+    </div>
+
+</div>

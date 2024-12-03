@@ -1,0 +1,532 @@
+/* Navbar CSS */
+.navbar {
+    background-color: #2479e9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: relative;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    margin: 0 0.5rem;
+
+}
+
+.nav-list a {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    
+}
+
+.nav-list a:hover {
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #ddd;
+    color: #046169;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 1px 1px 1px 1px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.search-container{
+    flex-grow: 1;
+    position: relative;
+}
+
+.search-container form{
+    padding: 10px 20px 0px 40%;
+    width: 30%;
+}
+
+.input-class {
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    /* Remove the default outline */
+    transition: border-color 0.3s;
+}
+
+.input-class:focus {
+    border-color: #007bff;
+}
+
+
+/* Navbar CSS complete */
+
+
+
+
+/* Home Page*/
+.home-container {
+    display: flex;
+    justify-content: center;
+    background-color: #6750A4;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+.line {
+    margin: 20px;
+    background-color: #699FA2;
+    border-radius: 20px;
+    border: 3px solid pink;
+    width: 30%;
+    height: 80vh;
+}
+
+
+.box1{
+    padding: 3px;
+    border-bottom: 2px dotted black;
+    -webkit-box-shadow: -5px 10px 19px -6px rgba(0,0,0,0.4);
+    -moz-box-shadow: -5px 10px 19px -6px rgba(0,0,0,0.4);
+    box-shadow: -5px 10px 10px -6px rgba(0,0,0,0.4);
+}
+
+.center{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.btn1{
+    padding: 8px;
+    background-color: #706a6a;
+    box-shadow: 2px 1px 2px 0px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    box-shadow: 2px 3px 2px 0px;
+}
+
+
+
+.container-1 {
+    box-shadow: 0px 5px 10px 0px;
+}
+
+.container-2 {
+    box-shadow: 0px 5px 8px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex1{
+    flex: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 70px;
+}
+
+.container-3 {
+    box-shadow: 0px 5px 6px 0px;
+}
+
+
+
+
+/* Home page css */
+
+
+
+/* topics component */
+
+.topic-head {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.topic-form label{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.topic-count {
+    display: grid;
+    place-items: center;
+}
+
+.topic-count li {
+    list-style: none;
+    padding: 3px;
+}
+
+.topic-count a {
+    text-decoration: none;
+    color: #1b1a1a;
+}
+
+.topic-count a:hover {
+    padding: 5px;
+    font-weight: 700;
+    background-color: #b7e7ed;
+    color: #046169;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Topics component css */
+
+
+
+/* Activity feed */
+.alpha {
+    padding-left: 20px;
+}
+
+.feed-list {
+    margin-bottom: 20px;
+}
+
+.feed-list a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.feed-list h5 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.feed-list small {
+    color: #fff;
+}
+
+/* Activity CSS */
+
+
+
+
+
+/* Recent Activity */
+.activity {
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+
+.activity small {
+    color: #423e3e;
+    margin-right: 10px;
+}
+
+.activity small a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.activity small:last-child {
+    display: block;
+    margin-top: 5px;
+}
+
+.activity p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.activity a[href^="@"] {
+    text-decoration: none;
+    color: #dc3545;
+    margin-right: 10px;
+}
+
+.activity hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/* Recent Activiy CSS */
+
+
+
+
+
+
+/* Profile Page */
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+
+/* Room Page */
+.room-container {
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    margin-top: 5px;
+}
+
+.alo{
+    border-left: 2px dotted black;
+}
+
+
+
+
+/* Login Page */
+
+.log-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.login-form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+}
+
+.name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pixel {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.txt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+
+
+
+/* Signup Page */
+.sign-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.sign-page form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+}
+
+.sign-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sign-page input[type="text"],
+.sign-page input[type="password"],
+.sign-page input[type="email"] {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.sign-page input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-page p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-page a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Sign Up CSS */
+
+
+/* Update User */
+.update-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #f2f2f2;
+}
+.update-label form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+}
+
+.update-label label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.update-label input[type="email"],
+input[type="text"] {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.update-label a{
+    text-decoration: none;
+    padding: 2px;
+    background: #1f2020;
+    color: #FBC32E;
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1300px){
+    .create-room {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px 5px 16px;
+        color: black;
+        font-size: 70%;
+        width: 25%;
+        box-shadow: 1px 1px 1px 1px;
+        margin-left: 35%;
+        background-color: #908f8f;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .search-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .box{
+        width: 400px;
+        padding-right: 30px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 445px) {
+    .nav-list a{
+        font-size: 0.8rem;
+    }
+
+    .create-room{
+        font-size: 55%;
+        box-shadow: 1px 1px 1px 1px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        height: 60%;
+    }
+
+    .line {
+        width: 80%;
+    }
+    .container-1{
+        height: 280px;
+    }
+
+    .container-2{
+        height: 350px;
+    }
+
+    .container-3{
+        display: none;
+    }
+}
+

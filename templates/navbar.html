@@ -1,0 +1,44 @@
+{% comment %} <div>
+    <a href="{% url "home" %}"> <h3>LOGO</h3></a>
+</div>
+
+<a href="{% url "home" %}">Home</a>
+<a href="{% url "profiles" %}">Profiles</a>
+
+{% if request.user.is_authenticated %}
+
+<a href="{% url "update-user" %}">UpdateUser</a>
+<a href="{% url "logout" %}">Logout</a>
+{% else %}
+<a href="{% url 'login' %}">Login</a>
+{% endif %} {% endcomment %}
+{% load static %}
+<nav class="navbar">
+    <div class="logo">
+        <h3><img src="{% static 'chat.png' %}" height="64px" alt="logo"></h3>
+    </div>
+    <div class="search-container">
+        <div class="box">
+            <form action="{% url "home" %}" method="GET">
+                <input class="input-class" type="text" name="q" placeholder='Search Rooms...' />
+            </form>
+        </div>
+    </div>
+    <ul class="nav-list">
+        <li><a href="{% url "home" %}">Home</a></li>
+        <li><a href="{% url "profiles" %}">Profiles</a></li>
+        {% if request.user.is_authenticated %}
+            <li><a href="{% url "update-user" %}">UpdateUser</a></li>
+            <li><a href="{% url "logout" %}">Logout</a></li>
+        {% else %}
+            <li><a href="{% url 'login' %}">Login</a></li>
+        {% endif %}
+    </ul>
+</nav>
+
+{% comment %} {% if request.user.is_authenticated %}
+    <p>Hello {{request.user}}</p>
+{% endif %} {% endcomment %}
+
+
+
